@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import os
+import re
 
 url = "https://us.puma.com/us/en/puma/shop-all-classics/best-selling-classics"
 response = requests.get(url)
@@ -50,7 +51,15 @@ for product in products:
     else:
         discount = "No discount"
 
-    data.append([name, price, discount])
+    # print(name)
+    rating_element = product.find("div", {"data-test-id": "plp-star-rating"})
+    rating_string = rating_element.text.strip()
+    # print(rating_string)
+    rating = rating_string[15:18]
+    num_reviews = re.search(r'\((\d+)\)Reviews', rating_string)
+    reviews = num_reviews.group(1)
+
+    data.append([name, price, discount, rating, reviews])
 
 # Create the 'data' directory if it doesn't exist
 os.makedirs('data', exist_ok=True)
@@ -58,7 +67,7 @@ os.makedirs('data', exist_ok=True)
 # Save the scraped data to a CSV file in the 'data' directory
 with open("data/puma_products.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow(["Product", "Price", "Discount"])
+    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews"])
     writer.writerows(data)
 
 print("Scraping completed.")

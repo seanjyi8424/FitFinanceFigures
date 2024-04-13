@@ -1,15 +1,20 @@
-Product,Price,Discount
-Nike Dunk Low Retro,$115,No discount
-Nike Dunk Low,$115,No discount
-Nike Air Force 1 '07,$115,No discount
-Nike Blazer Mid '77,$85,No discount
-Nike Air Max 270,$160,No discount
-Nike Sportswear Tech Fleece Windrunner,$145,No discount
-Nike Sportswear Tech Fleece,$125,No discount
-Nike InfinityRN 4,$95.97,40% off
-Nike Zoom Vomero 5,$160,No discount
-Nike V2K Run,$120,No discount
-Air Jordan 1 Mid,$125,No discount
-Jordan Brooklyn Fleece,$40.97,43% off
-Nike Blazer Mid '77 Vintage,$105,No discount
-Nike Sportswear Club Fleece,$65,No discount
+Product,Price,Discount,Rating,Reviews
+Nike Dunk Low Retro,$115,No discount,4.9,1637
+Nike Dunk Low,$115,No discount,4.9,1246
+Nike Air Force 1 '07,$115,No discount,4.8,3864
+Nike Blazer Mid '77,$85,No discount,4.8,500
+Nike Air Max 270,$160,No discount,4.7,4080
+Nike Court Legacy Next Nature,$70,No discount,4.6,822
+"Air Jordan 3 Retro Craft ""Ivory""",$210,No discount,4.9,142
+Nike Free Metcon 5,$120,No discount,4.7,410
+Nike V2K Run,$120,No discount,4.8,97
+Nike Air Max 90,$130,No discount,4.9,401
+Air Jordan 1 Low,$115,No discount,4.8,713
+Nike Court Legacy Lift,$90,No discount,4.7,993
+Nike Air VaporMax Plus,$210,No discount,4.8,2838
+Air Jordan 1 Mid,$100.97,19% off,4.8,1198
+Air Jordan 1 Mid SE,$87.97,34% off,4.8,46
+Air Jordan 1 High Method of Make,$155,No discount,4.5,39
+Nike Air Max 1,$140,No discount,4.9,309
+Nike Air Force 1,$90,No discount,5,9
+"Air Jordan 13 Retro ""Blue Grey""",$200,No discount,4.9,2411
