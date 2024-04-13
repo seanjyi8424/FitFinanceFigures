@@ -3,23 +3,17 @@
 -- Calculate the average price for Nike products
 USE product_database;
 
-SELECT 'Nike' AS brand, ROUND(AVG(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)), 2) AS avg_price
+SELECT 'Nike' AS brand, 
+    ROUND(AVG(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)), 2) AS avg_price,
+    MIN(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS min_price,
+    MAX(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS max_price
 FROM nike_products;
 
 -- Calculate the average price for Puma products
-SELECT 'Puma' AS brand, ROUND(AVG(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)), 2) AS avg_price
-FROM puma_products;
-
--- Calculate the minimum and maximum prices for Nike products
-SELECT 'Nike' AS brand, 
-       MIN(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS min_price,
-       MAX(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS max_price
-FROM nike_products;
-
--- Calculate the minimum and maximum prices for Puma products
-SELECT 'Puma' AS brand,
-       MIN(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS min_price,
-       MAX(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS max_price
+SELECT 'Puma' AS brand, 
+    ROUND(AVG(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)), 2) AS avg_price,
+    MIN(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS min_price,
+    MAX(CAST(SUBSTRING_INDEX(Price, '$', -1) AS DECIMAL)) AS max_price
 FROM puma_products;
 
 -- Calculate the price distribution for Nike products
