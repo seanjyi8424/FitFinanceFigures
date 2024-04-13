@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import os
+import re
 
 url = "https://www.nike.com/w/best-76m50"
 response = requests.get(url)
@@ -14,6 +15,7 @@ data = []
 processed_products = {}
 
 for product in products:
+    a_tag = product.find("a", class_="product-card__link-overlay")
     name = product.find("a", class_="product-card__link-overlay").text.strip()
     if name in processed_products:
         continue  # Skip the product if it has already been processed
@@ -39,8 +41,23 @@ for product in products:
             discount = discount_text
     else:
         discount = "No discount"
+    print(name) # Scraper takes a while to process so this is here to show it's working
+    # Gets ratings from each product link
+    prod_link = a_tag['href'] if a_tag else 'No link found'
+    response2 = requests.get(prod_link)
+    link_content = response2.text
+    soup2 = BeautifulSoup(link_content, "html.parser")
+    
+    rating_element = soup2.find('div', class_='css-n209rx')
+    rating = rating_element['aria-label'] if rating_element and 'aria-label' in rating_element.attrs else "No aria-label found"
+    print(rating)
 
-    data.append([name, price, discount])
+    # Gets number of reviews from each product link
+    reviews_string = soup2.find("summary", class_="css-rptnlm").text.strip()
+    num_reviews = re.search(r'Reviews \((\d+)\)', reviews_string)
+    reviews = num_reviews.group(1)
+
+    data.append([name, price, discount, rating, reviews])
 
 # Create the 'data' directory if it doesn't exist
 os.makedirs('data', exist_ok=True)
@@ -48,7 +65,7 @@ os.makedirs('data', exist_ok=True)
 # Save the scraped data to a CSV file in the 'data' directory
 with open("data/nike_products.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow(["Product", "Price", "Discount"])
+    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews"])
     writer.writerows(data)
 
 print("Scraping completed.")

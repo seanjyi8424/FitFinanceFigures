@@ -1,25 +1,25 @@
-Product,Price,Discount
-CA Pro Classic Sneakers,$80.00,No discount
-Suede Classic XXI Sneakers,$75.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-CA Pro Classic Sneakers,$80.00,No discount
-Suede Classic XXI Sneakers,$75.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-Roma Classic Gum Sneakers,$70.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-CA Pro Classic Sneakers,$80.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-CA Pro Classic Sneakers,$80.00,No discount
-Classics Men's Logo Tee,$30.00,No discount
-Classics Logo Men's Tee,$30.00,No discount
-CA Pro Classic Sneakers,$80.00,No discount
-Classics Men's Logo Tee,$30.00,No discount
-Classics Logo Men's Tee,$30.00,No discount
-Classics Logo Men's Tee,$30.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-Basket Classic XXI Men's Sneakers,$75.00,No discount
-Classics Logo Men's Tee,$30.00,No discount
-Suede Classic XXI Sneakers,59.99,20% off
-Suede Classic XXI Sneakers,59.99,20% off
-Suede Classic XXI Sneakers,59.99,20% off
+Product,Price,Discount,Rating,Reviews
+CA Pro Classic Sneakers,$80.00,No discount,4.1,73
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+Suede Classic XXI Sneakers,$75.00,No discount,4.3,594
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+CA Pro Classic Sneakers,$80.00,No discount,4.1,73
+Suede Classic XXI Sneakers,$75.00,No discount,4.3,594
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+Roma Classic Gum Sneakers,$70.00,No discount,4.1,42
+CA Pro Classic Sneakers,$80.00,No discount,4.1,73
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+CA Pro Classic Sneakers,$80.00,No discount,4.1,73
+Classics Men's Logo Tee,$30.00,No discount,4.0,1
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+Classics Logo Men's Tee,$30.00,No discount,1.3,6
+CA Pro Classic Sneakers,$80.00,No discount,4.1,73
+Classics Men's Logo Tee,$30.00,No discount,4.0,1
+Basket Classic XXI Men's Sneakers,$75.00,No discount,4.0,60
+Classics Logo Men's Tee,$30.00,No discount,1.3,6
+Classics Logo Men's Tee,$30.00,No discount,1.3,6
+Classics Logo Men's Tee,$30.00,No discount,1.3,6
+Suede Classic XXI Sneakers,59.99,20% off,4.3,594
+Suede Classic XXI Sneakers,59.99,20% off,4.3,594
+Suede Classic XXI Sneakers,59.99,20% off,4.3,594
