@@ -13,8 +13,10 @@ To run this project, you need the following dependencies:
 
 ## Installation
 
-1. Clone the repository: ``git clone https://github.com/seanjyi8424/fit-finance-figures.git``
-2. Install the required Python libraries: ``pip install requests beautifulsoup4``
+1. Clone the repository: 
+  ``git clone https://github.com/seanjyi8424/fit-finance-figures.git``
+2. Install the required Python libraries: 
+  ``pip install requests beautifulsoup4``
 3. Set up the MySQL database:
 - Create a new database named `fitness_apparel`.
 
@@ -22,7 +24,8 @@ To run this project, you need the following dependencies:
 
 The data collection process involves web scraping the fitness apparel websites using a Python script. The script, `nike_scraper.py`, extracts product information from the Nike website such as name, price, and discount from the websites.
 
-To run the web scraping script: ``python nike_scraper.py``
+To run the web scraping script: 
+  ``python nike_scraper.py``
 
 The scraped data will be exported as CSV files in the `data` directory.
 
