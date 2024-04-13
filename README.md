@@ -1,4 +1,74 @@
 # Fit Finance Figures
+
+## Project Overview
+
+The goal of Fit Finance Figures is to gain insights into the pricing, product distribution, and discounts offered by popular fitness apparel brands.
+
+## Prerequisites
+
+To run this project, you need the following dependencies:
+- Python 3.x
+- MySQL 8.0.36
+- Python libraries: requests, BeautifulSoup, csv
+
+## Installation
+
+1. Clone the repository: ``git clone https://github.com/seanjyi8424/fit-finance-figures.git``
+2. Install the required Python libraries: ``pip install requests beautifulsoup4``
+3. Set up the MySQL database:
+- Create a new database named `fitness_apparel`.
+
+## Data Collection
+
+The data collection process involves web scraping the fitness apparel websites using a Python script. The script, `nike_scraper.py`, extracts product information from the Nike website such as name, price, and discount from the websites.
+
+To run the web scraping script: ``python nike_scraper.py``
+
+The scraped data will be exported as CSV files in the `data` directory.
+
+## Data Export and Import
+
+After running the web scraping script, the collected data will be exported as CSV files in the `data` directory. To import the CSV files into the MySQL database:
+
+1. Open MySQL Workbench and connect to your database.
+2. Create the necessary tables using the SQL scripts provided in the `sql` directory.
+3. Import the CSV files into the corresponding tables using Table Data Import Wizard in MySQL Workbench.
+
+## Database Schema
+
+The database schema consists of the following tables:
+- `nike_products`: Contains information about Nike products.
+- `puma_products`: Contains information about Puma products.
+- ...
+
+## SQL Analysis
+
+The SQL queries for analyzing the data are located in the `sql` directory. Each SQL file focuses on a specific analysis task:
+
+- `analyze_price_points.sql`: Analyzes the price points of Nike and Puma products.
+- `analyze_discounts.sql`: Analyzes the discounts offered by each brand.
+- ...
+
+To execute the SQL queries, open the desired SQL file in MySQL Workbench and run the queries.
+
+## Results and Findings
+
+The analysis of the fitness apparel data revealed the following insights:
+
+EXAMPLES FOR NOW
+- Nike products have a higher average price point compared to Puma.
+- Puma offers more frequent discounts compared to Nike.
+- ...
+
+Detailed findings and visualizations can be found in the `reports` directory.
+
+## Folder Structure
+
+- `data`: Contains the CSV files exported from the web scraping process.
+- `sql`: Contains the SQL scripts for creating tables and analyzing the data.
+- `reports`: Contains the markdown files with detailed findings and visualizations.
+- `scripts`: Contains Python scripts for web scraping the fitness apparel websites.
+
 ## Questions to answer in this project
 How do the price points of these different products differ?
 
