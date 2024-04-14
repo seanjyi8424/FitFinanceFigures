@@ -9,7 +9,9 @@ response = requests.get(url)
 html_content = response.text
 
 soup = BeautifulSoup(html_content, "html.parser")
-products = soup.find_all("div", class_="relative w-full flex flex-col gap-2")
+# products = soup.find_all("div", class_="relative w-full flex flex-col gap-2")
+products = soup.find_all("li", attrs={"data-test-id": "product-list-item"})
+
 
 data = []
 processed_products = {}
@@ -59,7 +61,17 @@ for product in products:
     num_reviews = re.search(r'\((\d+)\)Reviews', rating_string)
     reviews = num_reviews.group(1)
 
-    data.append([name, price, discount, rating, reviews])
+    a_tag = product.find("a", class_="tw-hqslau tw-xbcb1y")
+    prod_link = a_tag['href'] if a_tag else 'No link found'
+    prod_link = "https://us.puma.com" + prod_link
+    # print(prod_link)
+    response2 = requests.get(prod_link)
+    link_content = response2.text
+    soup2 = BeautifulSoup(link_content, "html.parser")
+
+    description = soup2.find("div", style=lambda value: value and "line-height:1.5em;height:3em;overflow:hidden;width:100%;text-overflow:ellipsis" in value).text.strip()
+    # print(description)
+    data.append([name, price, discount, rating, reviews, description])
 
 # Create the 'data' directory if it doesn't exist
 os.makedirs('data', exist_ok=True)
@@ -67,7 +79,7 @@ os.makedirs('data', exist_ok=True)
 # Save the scraped data to a CSV file in the 'data' directory
 with open("data/puma_products.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews"])
+    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews", "Description"])
     writer.writerows(data)
 
 print("Scraping completed.")

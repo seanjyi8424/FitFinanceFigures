@@ -1,20 +1,15 @@
-Product,Price,Discount,Rating,Reviews
-Nike Dunk Low Retro,$115,No discount,4.9,1637
-Nike Dunk Low,$115,No discount,4.9,1246
-Nike Air Force 1 '07,$115,No discount,4.8,3864
-Nike Blazer Mid '77,$85,No discount,4.8,500
-Nike Air Max 270,$160,No discount,4.7,4080
-Nike Court Legacy Next Nature,$70,No discount,4.6,822
-"Air Jordan 3 Retro Craft ""Ivory""",$210,No discount,4.9,142
-Nike Free Metcon 5,$120,No discount,4.7,410
-Nike V2K Run,$120,No discount,4.8,97
-Nike Air Max 90,$130,No discount,4.9,401
-Air Jordan 1 Low,$115,No discount,4.8,713
-Nike Court Legacy Lift,$90,No discount,4.7,993
-Nike Air VaporMax Plus,$210,No discount,4.8,2838
-Air Jordan 1 Mid,$100.97,19% off,4.8,1198
-Air Jordan 1 Mid SE,$87.97,34% off,4.8,46
-Air Jordan 1 High Method of Make,$155,No discount,4.5,39
-Nike Air Max 1,$140,No discount,4.9,309
-Nike Air Force 1,$90,No discount,5,9
-"Air Jordan 13 Retro ""Blue Grey""",$200,No discount,4.9,2411
+Product,Price,Discount,Rating,Reviews,Description
+Nike Dunk Low Retro,$115,No discount,4.9,1637,"Created for the hardwood but taken to the streets, the Nike Dunk Low Retro returns with crisp overlays and original team colors. This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better. Modern footwear technology helps bring the comfort into the 21st century.Shown: White/White/BlackStyle: DD1391-100"
+Nike Dunk Low,$115,No discount,4.9,1247,"Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly shined overlays and classic team colors. With its iconic hoops design, the Nike Dunk Low channels '80s vintage back onto the streets while its padded, low-cut collar lets you take your game anywhere—in comfort.Shown: White/White/BlackStyle: DD1503-101"
+Nike Air Force 1 '07,$115,No discount,4.8,3864,"The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.Shown: White/WhiteStyle: CW2288-111"
+Nike Blazer Mid '77,$85,No discount,4.8,500,"The Nike Blazer Mid '77 channels the old-school look of Nike basketball with a vintage midsole finish. Throwback style with modern materials means you can run, skip and jump in comfort.Shown: Black/White/Team Orange/SailStyle: DA4086-002"
+Nike Air Max 270,$160,No discount,4.7,3248,"Nike's first lifestyle Air Max brings you style, comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, showcasing Nike's greatest innovation with its large window and fresh array of colors.Shown: Black/White/Solar Red/AnthraciteStyle: AH8050-002"
+Nike Sportswear Tech Fleece Windrunner,$145,No discount,4.7,214,"Blending 2 of our most iconic looks, this full-zip hoodie draws design inspiration from our timeless Windrunner jacket as well as our Tech Fleece jacket. It's designed to feel relaxed through the shoulders, chest and body for an athletic fit you can layer. Our premium, smooth-on-both-sides fleece feels warmer and softer than ever, while keeping the same lightweight build you love.Shown: Obsidian Heather/BlackStyle: FB7921-473"
+Nike Sportswear Tech Fleece,$125,No discount,4.4,109,"These comfy joggers bring back the signature slim fit you know for a tailored look. Our premium, smooth-on-both-sides fleece feels warmer and softer than ever, while keeping the same lightweight build you love. Tall ribbed cuffs pair with a zippered pocket on the right leg for secure storage and that signature Tech Fleece DNA. Pair them with the Tech Fleece hoodie for a uniform finish.Shown: Obsidian Heather/BlackStyle: FB8002-473"
+Nike InfinityRN 4,$95.97,40% off,4.2,5,"Maximum cushioning provides elevated comfort for everyday runs. Experience a soft, rocker-shaped platform made with new ReactX foam underfoot and an ultra-comfortable collar and tongue for a snug feel. Plus, a water-resistant membrane was added to this version to help keep you dry.Shown: White/Volt/Sail/Pro GreenStyle: FZ4019-100"
+Nike Zoom Vomero 5,$160,No discount,4.5,6,"Carve a new lane for yourself in the Zoom Vomero 5—your go-to for complexity, depth and now, easy styling. The richly layered design includes textiles, synthetic suede and plastic accents that come together to make one of the coolest sneakers of the season. A neutral palette makes them a certain win for any 'fit your wardrobe throws at you. Taking early 2000s running to modern heights, it's a true tech meets low-key love story.Shown: Black/Iron Grey/Summit White/Picante RedStyle: FB9149-001"
+Nike V2K Run,$120,No discount,4.8,97,"Fast forward. Rewind. Doesn’t matter—this shoe takes retro into the future. The V2K remasters everything you love about the Vomero in a look pulled straight from an early aughts running catalog. Layer up in a mixture of flashy metallics, referential plastic details and a midsole with a perfectly vintage aesthetic. And the chunky heel makes sure wherever you go, it's in comfort.Shown: Summit White/Pure Platinum/Light Iron Ore/Metallic SilverStyle: FD0736-100"
+Air Jordan 1 Mid,$125,No discount,4.9,936,"Inspired by the original AJ1, this mid-top edition maintains the iconic look you love while choice colors and crisp leather give it a distinct identity.Shown: Black/Fire Red/White/Cement GreyStyle: DQ8426-006"
+Jordan Brooklyn Fleece,$40.97,43% off,4.6,47,"You want a hoodie that's simple and looks good, right? Here you go. It's made of soft fleece that's smooth on the outside and plush on the inside, helping you stay comfy and warm all day.Shown: Gym Red/Gym Red/Gym Red/WhiteStyle: FJ7774-687"
+Nike Blazer Mid '77 Vintage,$105,No discount,4.7,770,"In the ‘70s, Nike was the new shoe on the block. So new in fact, we were still breaking into the basketball scene and testing prototypes on the feet of our local team. Of course, the design improved over the years, but the name stuck. The Nike Blazer Mid ’77 Vintage—classic since the beginning.Shown: White/BlackStyle: BQ6806-100"
+Nike Sportswear Club Fleece,$65,No discount,4.7,2652,"A closet staple, the Nike Sportswear Club Fleece Pullover Hoodie combines classic style with the soft comfort of fleece.Shown: Dark Grey Heather/Matte Silver/WhiteStyle: BV2654-063"
