@@ -57,7 +57,9 @@ for product in products:
     num_reviews = re.search(r'Reviews \((\d+)\)', reviews_string)
     reviews = num_reviews.group(1)
 
-    data.append([name, price, discount, rating, reviews])
+    description = soup2.find("div", class_="description-preview body-2 css-1pbvugb").text.strip()
+
+    data.append([name, price, discount, rating, reviews, description])
 
 # Create the 'data' directory if it doesn't exist
 os.makedirs('data', exist_ok=True)
@@ -65,7 +67,7 @@ os.makedirs('data', exist_ok=True)
 # Save the scraped data to a CSV file in the 'data' directory
 with open("data/nike_products.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews"])
+    writer.writerow(["Product", "Price", "Discount", "Rating", "Reviews", "Description"])
     writer.writerows(data)
 
 print("Scraping completed.")
